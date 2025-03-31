@@ -13,4 +13,5 @@
 - ✅ **Default & Static Methods in Interfaces**  
 - ✅ **Parallel Streams & Performance Considerations**  
 
----
+## 🔌 Circuit Breaker Code  
+- [Circuit Breaker Implementation](https://chatgpt.com/canvas/shared/67ea4425f87c81918f8e9e93c4a549ff)  
