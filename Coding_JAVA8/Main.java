@@ -40,5 +40,20 @@ public class Main {
 		                           );
 		findPartition(employees);
 		findEmpWithHighestSalary(employees);
+
+		    // write a java program to sort a list of employees frst by Name and then by salary, u can combine using theCompairing method
+        
+        List<Employee> ans =
+        employees.stream().sorted(Comparator.comparing( (Employee x) -> x.name).thenComparingDouble(x -> x.salary)).collect(Collectors.toList());
+        System.out.println(ans);
 	}
+	//In reverse 
+	List<Employee> ans = employees.stream()
+    .sorted(
+        Comparator.comparing((Employee x) -> x.name)
+                  .reversed() // name descending
+                  .thenComparing((Employee x) -> x.salary, Comparator.reverseOrder()) // salary descending
+    )
+    .collect(Collectors.toList());
+
 }
